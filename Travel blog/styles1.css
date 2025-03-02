@@ -1,0 +1,213 @@
+*{  padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+.logo{
+    padding: 15px;
+    color: white;
+}
+.navbar{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    background-color: #901677;
+    justify-content:space-between ;
+    align-items: center;
+   color: rgb(41, 192, 119);
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.menu ul li a:hover{
+   
+    background-color:black;
+    
+    
+}
+.signup {
+    text-decoration: none;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 12px 30px;
+    border: 2px solid rgb(19, 137, 184);
+    margin: 10px;
+
+}
+.signup # :hover{
+    background-color: red;
+    transition: 0.6s;
+}
+.body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../assets/world.png);
+    background-position:fixed;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heading{
+    width: 30%;
+    text-align: center;
+    color: #fff;
+}
+.heading h1{
+    font-size: 40px;
+   
+}
+.heading a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 14px 50px;
+     background-color: #fff;
+}
+.heading a:hover{
+    letter-spacing: 3px;
+    transition: 0.6s;
+    
+}
+.tours{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.places{
+    display: inline;
+    text-align: center;
+    border-radius: 12px;
+    padding: 40px;
+    
+}
+.places h2{
+    color: red;
+    font-size: 35px;
+    letter-spacing: 3px;
+    border-radius: 12px;
+    padding: 10px  10px;
+    margin-bottom: 10px;
+    background-color: #1d7ca8;
+}
+.places a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 12px 30px;
+    background-color: #fff;
+}
+.places a :hover{
+    background-color: #000;
+    transition: 0.6s;
+}
+.text{
+    padding-top: 200px;
+    text-align: center;
+}
+
+
+
+/* responsiveness*/
+
+
+
+@media (max-width: 1200px) {
+    .navbar {
+        height: 70px;
+    }
+
+    .heading {
+        width: 40%;
+    }
+
+    .tours {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .heading {
+        width: 50%;
+    }
+
+    .tours {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .places {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        width: 70%;
+    }
+
+    .places h2 {
+        font-size: 25px;
+    }
+
+    .places a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu ul li a {
+        font-size: 16px;
+        padding: 4px 10px;
+    }
+
+    .heading {
+        width: 90%;
+    }
+
+    .places {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .places h2 {
+        font-size: 20px;
+    }
+
+    .places a {
+        font-size: 14px;
+    }
+}
+
+

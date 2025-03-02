@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            list-style: none;
+        }   
+        .extra{
+            display: none;
+        }
+        input[type="checkbox"]{
+            height: 2px;
+            width: 3px;
+            border: solid rgb(7, 7, 53);
+            display: block;
+            appearance: none;
+        }
+        label{
+            position: relative;
+            padding:1px;
+            background-color: blue;
+            color: antiquewhite;
+            cursor: pointer;
+        }
+        label:before{
+            content: "Read More";
+        }
+        input[type="checkbox"]:checked~label:before{
+            content: "Read Less";  
+        }
+        .dots:has(~input[type="checkbox"]:checked){
+            display: none;
+        }
+        .extra:has(~input[type="checkbox"]:checked){
+            display: inline;
+        }
+    body{
+            text-align: center;
+            padding: 50px;
+            background-color: antiquewhite;
+            padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+   
+ }
+    .flex-container1{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        column-gap: 20px;
+        margin-top: 20x;
+
+    }
+    .flex-container2{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        column-gap: 20px;
+margin-top: 20px;
+    }
+    .flex-container3{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        column-gap: 20px;
+margin-top: 20px;
+    }
+    .flex-container4{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        column-gap: 20px;
+margin-top: 20px;
+    }
+    .flex-container5{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        column-gap: 20px;
+margin-top: 20px;
+    }
+    .America{
+color: rgb(0, 0, 0);
+border: solid rgb(228, 215, 215);
+width: 600px;
+margin: 0%;
+margin-left: 0%;
+align-content: start;
+padding: 10px;
+
+    }
+    .Brazil{
+        color: rgb(0, 0, 0);
+        border: solid rgb(228, 215, 215);
+width: 600px;
+margin: 0%;
+margin-left: 0%;
+align-content: start;
+padding: 10px;
+  
+    }
+    .Asia{
+        color: rgb(0, 0, 0);
+        border: solid rgb(228, 215, 215);
+width: 600px;
+margin: 0%;
+margin-left: 0%;
+align-content: start;
+padding: 10px;
+    }
+    .caribbean{
+        color: rgb(0, 0, 0);
+        border: solid rgb(228, 215, 215);
+width: 600px;
+margin: 0%;
+margin-left: 0%;
+align-content: start;
+padding: 10px;
+    }
+    .europe{
+        color: rgb(0, 0, 0);
+        border: solid rgb(228, 215, 215);
+width: 600px;
+margin: 0%;
+margin-left: 0%;
+align-content: start;
+padding: 10px;  
+    }
+    .greece{
+        color: rgb(0, 0, 0);
+        border: solid rgb(228, 215, 215);
+width: 600px;
+margin: 0%;
+margin-left: 0%;
+align-content: start;
+padding: 10px;    
+    }
+    .middle-east{
+        color: rgb(0, 0, 0);
+        border: solid rgb(228, 215, 215);
+width: 600px;
+margin: 0%;
+margin-left: 0%;
+align-content: start;
+padding: 10px;    
+    }
+    .oman{
+        color: rgb(0, 0, 0);
+        border: solid rgb(228, 215, 215);
+width: 600px;
+margin: 0%;
+margin-left: 0%;
+align-content: start;
+padding: 10px;       
+    }
+    .ocean{
+        color: rgb(0, 0, 0);
+        border: solid rgb(228, 215, 215);
+width: 600px;
+margin: 0%;
+margin-left: 0%;
+align-content: start;
+padding: 10px;         
+    }
+    .palau{
+        color: rgb(0, 0, 0);
+        border: solid rgb(228, 215, 215);
+width: 600px;
+margin: 0%;
+margin-left: 0%;
+align-content: start;
+padding: 10px;  
+    }
+    h1{
+        color: rgb(18, 22, 132);
+    }
+    h2{
+        color: rgb(70, 8, 42);
+    }
+    p{
+        
+    }
+
+
+    @media (max-width: 1200px) {
+    .flex-container1, .flex-container2, .flex-container3, .flex-container4, .flex-container5 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .America, .Brazil, .Asia, .caribbean, .europe, .greece, .middle-east, .oman, .ocean, .palau {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .flex-container1, .flex-container2, .flex-container3, .flex-container4, .flex-container5 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .America, .Brazil, .Asia, .caribbean, .europe, .greece, .middle-east, .oman, .ocean, .palau {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .flex-container1, .flex-container2, .flex-container3, .flex-container4, .flex-container5 {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .America, .Brazil, .Asia, .caribbean, .europe, .greece, .middle-east, .oman, .ocean, .palau {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .flex-container1, .flex-container2, .flex-container3, .flex-container4, .flex-container5 {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .America, .Brazil, .Asia, .caribbean, .europe, .greece, .middle-east, .oman, .ocean, .palau {
+        width: 100%;
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+} 
+  </style>
+    <link rel="stylesheet" href="./styles1.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <h1> Lucky Travels</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./blog.html">Blogs</a></li> 
+                <li><a href="./Destination.html">Destinations</a></li>
+                <li><a href="./img gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="signup">
+            <a href="./signup.html">Signin</a>
+        </div>
+    </div>
+    
+    </div>
+    <div>
+        <h1><b><marquee></marquee></b></h1>
+       <p><h2>Recent travel blog posts</h2></p>
+       </div><br><br>
+       <!----America-->
+       <div class="flex-container1">
+        <div class="America">
+           <p class="original">
+              <h2>Lamanai Ruins: The Mayan Mask Temple Of Belize</h2><br>
+        The Lamanai ruins in Belize are some of the most fascinating Mayan ruins in Central America, complete with a ‘Mask Temple’ that has giant stone faces carved into the foundation. It looks like something from Indiana Jones!
+             Lamanai means ‘submerged crocodile’ and this area on the riverside was settled by the Mayans for thousands of years. Excavation was only started in the 1970s, and continues today. Some of the temples are even open for climbing, so you can get panoramic views from the top!
+   
+               You can visit Lamanai pretty easily on a day trip from places like Orange Walk, Belize City, or even San Pedro in Ambergris Caye. Along the way, you get to enjoy a river boat ride through the jungle, with the sounds of tropical birds and howler monkeys in the tree tops.
+               
+               This travel guide will explain how to get to Lamanai Belize, what to see at the Mayan ruins, best tour packages to use.<br>
+   <img src="https://uncoveredhistory.com/images/W0745-Lamanai-Mask-Temple.jpg" alt="Temple" width="300" height="200">
+               </p>
+       
+           <p class="extra">
+               Where Is Lamanai Located? How To Get There
+               Lamanai is located in northern Belize, near the New River, and you can get there by either car or boat.
+               
+               The closest significant town is Orange Walk, but you can also visit Lamanai on a day trip from anywhere in northern Belize, including Belize City, Ladyville, Los Lagos, Caye Caulker, or San Pedro in Ambergris Caye.
+               
+               If you’re driving to Lamanai with a car, it’s about 1 hour from Orange Walk town, or more than 2 hours from Belize City. The distance is actually not very far, but the roads near Lamanai are dirt and gravel, and they’re not in great condition. Four-wheel drive is recommended, especially in the rainy season.
+               
+               Lamanai tours normally go to the archaeological site by boat instead of car. This is the most fun and interesting way to do it, because you get to relax and enjoy the river views, while also watching for birds and other wildlife.
+               
+               The boat ride to Lamanai takes about 1 hour, and it’s one of the great things about coming here, in my opinion!Lamanai Belize Ruins Mayan Mask Temple<br>
+               <img src="https://miro.medium.com/v2/resize:fit:890/0*-dEFtwL7MO6zL4ap.jpg" alt="Temple" width="300" height="200">
+               </p>
+               
+               <input type="checkbox" id="btn">
+              <label for="btn"></label>
+              </div>
+   
+       <div class="Brazil">
+           <p class="original">
+           
+   <h2>Iguazu Falls Travel Guide For Argentina & Brazil
+   </h2>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxlPLX7s14tXr40ic7M2oJY2W-kaXOKDyg4g&s" alt="waterfalls" width="400" height="300"><br>
+   
+   Iguazu Falls is one of the world’s most spectacular and impressive waterfalls, straddling the border between Argentina and Brazil in South America.
+   
+       With more than 275 individual cascades, Iguazu is actually the biggest waterfall system in the world! The closest comparison is probably Niagara Falls in Canada and the United States, although Iguazu Falls is bigger than Niagara by most measurements.
+   </p>
+       <p class="extra">
+           This spectacular waterfall has been made into a national park in Argentina and Brazil, and both sides of the falls are well worth a visit since they offer different views! You can see the best highlights of Iguazu in a couple of days, although you could easily spend longer.
+   
+           This travel guide will explain how to get to Iguazu Falls on the Argentina or Brazil side (with or without a tour), plus a map of the falls and more info. Lastly, I’ll share some interesting facts about the waterfall itself!<br>
+           Where Is Iguazu Falls?
+       Iguazu Falls is located on the border of Argentina and Brazil, in the continent of South America.
+       
+       There are towns and airports on both sides of the border, with plenty of tourist friendly hotels and restaurants, and you can easily go back and forth between the two countries to see both sides of the waterfall.
+       
+       The town on the Argentine side of the falls is called Puerto Iguazu, while the Brazil side is called Foz do Iguacu.<br>
+       
+       <img src="https://theworldtravelguy.com/wp-content/uploads/2023/04/DSCF2415.jpg" alt="waterfalls" width="400" height="300"><br>
+   </p>
+       <input type="checkbox" id="btn">
+       <label for="btn"></label>
+       </div>
+   </div>
+   <!----Asia--------->
+   <div class="flex-container2">
+    <div class="Asia">
+       <p class="original">
+           <h2>Kinkakuji Temple – Golden Pavilion In Kyoto, Japan
+           </h2>
+           Kinkakuji Temple (also known as the Golden Pavilion) is one of the most iconic and famous places in Japan.
+   
+   The ancient capital of Kyoto is full of interesting shrines and temples and historical buildings, but I think this one probably takes the cake for the nicest looking temple in Japan.
+   
+   History Of Kinkaku-ji
+   Kinkaku-ji originally started as a villa, and then it was turned into a Zen temple around the 1400s. Many of the buildings were destroyed in the Onin War in the mid-1400s, but the pavilion survived intact.<br>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn60SmD2NreX6bGV00BttZvcF-hDMbaBANqQ&s"alt="temple" width="400" height="300"><br>
+   </p>
+   <p class="extra">In the 1950s, a huge portion of the pavilion was burned and suffered catastrophic damage when it was set on fire by a suicidal monk. It was restored in 1955, and has been maintained ever since.
+   
+       Today, Kinkaku attracts many tourists from all over the world, and along with some of Kyoto’s other ancient monuments it’s recognized as a UNESCO World Heritage Site.
+        
+       
+       Visiting Kinkaku-ji Temple
+       Kinkakuji Temple is a 3-story gold-leaf covered temple overlooking a pond.
+       
+       The pavilion itself is closed to visitors, but that’s okay because the best views are on the outside!
+       
+       It’s a pretty small place, but you’ll still want to budget at least 30-60 minutes here because you’ll be taking a lot of pictures as you stroll around.
+       
+       This is one of the most photogenic places in Japan!<br>
+       <img src="https://www.japan-guide.com/g18/3908_02.jpg"alt="Temple" width="400" height="300"><br>
+       </p>
+   <input type="checkbox" id="btn">
+       <label for="btn"></label>
+       </div>
+       <!----caribbean-->
+       <div class="caribbean">
+           <p class="original">
+               <h2>10 Best Hikes In Aruba: Family Friendly Trails
+               </h2>
+               Even though Aruba is mainly known for its beaches and other fun activities, there are also some easy and family friendly hikes on the island where you can see natural pools, rock arches, and desert landscapes at the Arikok National Park.
+               Don’t expect anything truly mind blowing like the scenery you might see in the U.S. national parks, but hiking in Aruba can still be a good way to get away from the crowds and enjoy the coastline while burning some calories.
+   
+               This is our guide to some of the best hikes in Aruba! If you have any other favorites, let me know in the comments at the end of the blog post.<br>
+               <img src="https://theworldtravelguy.com/wp-content/uploads/2024/01/Aruba_02_1200.jpg"alt="hike" width="400" height="300"><br>
+   </p>
+   <p class="extra">
+       1. Conchi Natural Pool
+   The Conchi natural pool is one of the most famous spots in Arikok National Park. It’s a beautiful turquoise tide pool that you can swim in, surrounded by a wall of rocks that protects you from the crashing waves.
+   
+   There are several ways to get to the natural pool. Most people go with a jeep tour, but you can also get there by hiking from the Arikok Visitor’s Center.
+   
+   Along the way, you can see goats and lizards, and other interesting things, and the main payoff is getting to swim in the natural pool at the end of the trail.
+   
+   This is a long and exposed hike that can be seriously hot. I’d recommend buying your park pass the day before so you can start the hike no later than 6 AM. Definitely bring a hat and sunscreen, and more water than you think you need.
+   
+   Distance: 10.5 km (6.5 mi) roundtrip<br>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvvWCBH90iuje4AeDfutFImLXjQJbaSsaTOw&s"alt="hike" width="400" height="300"><br>
+   2. Daimari to Conchi Natural Pool
+   Another way you can get to the Conchi natural pool is by hiking from Daimari Bay. I like this route better, because it’s slightly easier and most of the time is spent walking along the coastline.
+   
+   Along the way, you’ll also pass Boca Keto, a rugged twin beach with a unique rock formation called the ‘Klein Aruba’ (miniature Aruba), because from above it looks like a smaller version of the island of Aruba!
+   </p>
+   <input type="checkbox" id="btn">
+       <label for="btn"></label>
+       </div>
+       </div>
+       <!----europe-->
+       <div class="flex-container3">
+       <div class="europe">
+           <p class="original">
+               <h2>Basilica De Santa Maria Del Mar Church In Barcelona, Spain
+       </h2>
+       After you’re done visiting the famous Catedral de Barcelona and the mountains at Montserrat National Park, you may be asking yourself what else there is to see in northern Spain.
+       What many tourists don’t know is that Barcelona has another medieval church by the name of Basilica De Santa Maria Del Mar, and you can visit it for free at certain times of the day.
+   
+       I don’t know if I enjoyed this one quite as much as other stuff in the area, but it’s easy to tack onto any Barcelona itinerary and the architecture is still pretty great.
+       
+       This travel guide will explain how to get there, and everything you need to know before you go!
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Ar_RiO8zUxE0R3BBeMVYh2HmI5zf0Qyn9w&s"alt="photo" width="400" height="300"><br>
+       <p>
+           The Santa Maria Del Mar – Facts & History
+   Santa Maria Del Mar is a 14th century Gothic style catholic church in Barcelona. It was built by the Kingdom of Aragon between 1329 and 1383.
+   
+   Over the years, the building has been damaged by fires, earthquakes, and wars, but steady restoration work has kept it looking grand as ever.
+   The Santa Maria Del Mar – Facts & History
+   Santa Maria Del Mar is a 14th century Gothic style catholic church in Barcelona. It was built by the Kingdom of Aragon between 1329 and 1383.
+   
+   Over the years, the building has been damaged by fires, earthquakes, and wars, but steady restoration work has kept it looking grand as ever.
+   <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/eb/14/0d/photo7jpg.jpg?w=1200&h=1200&s=1"alt="photo" width="400" height="300"><br>
+   
+   </p>
+   <input type="checkbox" id="btn">
+       <label for="btn"></label>
+       </div>
+   <div class="greece">
+       <p class="original">
+       <h2>Santorini Greece Travel Guide & Best Things To Do
+       </h2>
+       The little island of Santorini in Greece is famous for its photogenic old blue-and-white buildings, beautiful high end hotels with infinity pools, and sweeping views of the ocean.
+   
+   Santorini is almost synonymous with luxury nowadays, but it’s also possible to travel the island on a budget, and many of the best things to do in Santorini are free, such as strolling the historic towns, taking pictures, relaxing on the beach, and seeing the sunset.
+   
+   A trip to the Greek islands wouldn’t be complete without seeing Santorini for at least a few days, and it’s easier than ever to get there from Athens and other major cities in Europe.
+   
+   This Santorini travel guide will explain how to get there, where to stay, which transport options and tour packages to use, and some of the best things to do on the island!<br>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ScMtLOxV4ll3RmtYV1h_zDRPNsxA5Yb6Ug&s" alt="photo" width="400" height="300"><br>
+   
+   </p>
+   <p class="extra">
+       Best Santorini Tours
+   First of all, if you only have a short stay in Santorini, such as a few days or less, then a day tour can be a great way to see the island.
+   
+   We recommend GetYourGuide for Santorini tours! They have high rated private tours or shared tours that go to a bunch of the best sights like Oia, Pyrgos, and Perissa.
+   
+   You can also hire a private photographer to take pictures of you in a flowing dress, with the Santorini buildings and seascape in the background, like you always see on Instagram.
+   
+   We’ve used this company for lots of day tours and activities around the world, and they’re great! Highly recommended.<br>
+   
+   Best Santorini Tours
+   First of all, if you only have a short stay in Santorini, such as a few days or less, then a day tour can be a great way to see the island.
+   
+   We recommend GetYourGuide for Santorini tours! They have high rated private tours or shared tours that go to a bunch of the best sights like Oia, Pyrgos, and Perissa.
+   
+   You can also hire a private photographer to take pictures of you in a flowing dress, with the Santorini buildings and seascape in the background, like you always see on Instagram.
+   
+   We’ve used this company for lots of day tours and activities around the world, and they’re great! Highly recommended.<br>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1MN_VgWdyuym57PAK7F_29IQ-i1S3iIjfw&s"  alt="photo" width="400" height="300"><br>
+   </p>
+   <input type="checkbox" id="btn">
+       <label for="btn"></label>
+       </div>
+   
+   
+   </div>
+   <div class="flex-container4">
+       <div class="middle-east">
+           <p class="original">
+   <p><h2>How To Visit The Pyramids Of Giza & Sphinx In Egypt
+   </h2>
+   What kind of bucket list doesn’t include the Great Pyramids of Giza in Egypt? Believe it or not, the Giza pyramids are fairly easy to visit on a day trip from Cairo, the capital of Egypt.
+   Built in 2560 BC, the Great Pyramid of Giza was the tallest man-made object in the world for 3,800 years. It’s the oldest of the Seven Wonders Of The Ancient World, and the only one still standing today.
+   
+   Visiting the Egypt pyramids is a pretty simple experience, and there’s not a whole lot to do there except gaze at the big piles of rock, but it’s still a profound and unique experience that every traveler should check off their list.
+   
+   This travel guide will explain how you can visit the Egyptian pyramids on your own, with or without a tour, and with a very modest budget and minimal planning!<br>
+   Quick Facts (Main Pyramid)
+   Date: 2560 BC
+   Height: 150 meters (500 ft)
+   Base Length: 150 meters (500 ft)
+   Weight: 6 million tons
+   No. of Blocks: 2.3 million
+   Builders: 200,000+<br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2K4ebyjfGrIBvGzz5abihqzLdQ53-40BF6Q&s" alt="photo" width="400" height="300"><br>
+   </p>
+   <p class="extra">
+       Best Day Tours To The Egypt Pyramids
+       First of all, if you’re on a tight schedule and want to skip the extra steps involved in arranging your own trip to the pyramids, or if you’d rather travel in a tour group for safety or convenience, there are options for doing that.
+       
+       There are a number of companies that offer prearranged day tours to the Pyramids of Giza and the Sphinx for as low as $45 USD, complete with hotel transfer, optional camel ride, and same day return to Cairo.
+       
+       If you’d rather make your own arrangements and go without a group, that’s covered next.
+       The nearest airport is the Cairo International Airport (CAI), which is served by a bunch of international airlines. You can shop for flights to Cairo at Skyscanner.
+   
+   From the Cairo airport, it’s a 1 hour drive to Giza. The arrivals zone has plenty of taxis you can take, but I used Uber and I would highly recommend this because it’s much cheaper and probably safer too.
+   
+   Do not rent a car in Egypt unless you are familiar with driving in the Middle East! Traffic in Arab countries is dangerous and chaotic, and you’ll be much better off going with a driver who’s familiar with how the traffic works here.
+   
+   Besides, the drivers in Egypt are pretty affordable — as of 2024, the price for an Uber ride from Cairo to Giza is around 340 EGP (~$7 USD).<br><br>
+   
+      <img src="https://static.vecteezy.com/system/resources/previews/036/404/776/non_2x/a-beautiful-picture-of-the-pyramids-in-giza-in-egypt-with-the-sphinx-photo.jpg" alt="photo" width="400" height="300"><br>
+   </p>
+   <input type="checkbox" id="btn">
+       <label for="btn"></label>
+       </div>
+       <div class="oman">
+           <p class="original">
+               <h2>5 Best Forts & Castles To Visit In Oman
+               </h2>
+               Oman is a country full of forts and castles. According to some figures there are over 500 castles, forts, towers, and other fortifications in this Middle Eastern country.
+   
+               Most of these buildings were made in the 17th and 18th centuries to protect the coastline of Oman, but because of restoration work they’re still in surprisingly good condition today!
+               Best Oman Tours
+               First of all, if you're wanting to explore Oman with a tour guide/driver and private car, my top recommendation would be Klook.
+               
+               Oman is not the cheapest country to travel, but Klook has Rustaq day tours starting from $65 USD, and Nizwa tours for similar prices. Both of these tours start from Muscat, and they'll allow you to see some of the best Omani castles, forts, and traditional markets.
+               
+               We've used Klook for lots of tours and activities around the world, and they're great! Highly recommended.<br>
+               <img src="https://theworldtravelguy.com/wp-content/uploads/2018/11/DSCF3719.jpg" alt="photo" width="400" height="300"><br>
+           </p>
+           <p class="extra">
+               • Nizwa Fort
+   This fort is right next to the souq (market) of Nizwa, and you can tour the entire building, complete with the same store rooms, old weapons, and artifacts it had in the 17th century. It’s an interesting walk through history.
+   • Al Hazm Castle
+   Al Hazm is one of the less known castles in Oman, but I still think it’s definitely worth a visit.
+   
+   The inside of the fort has lots of interesting rooms, with secret chambers, prisons, and date store rooms; some of the rooms even have cannons, old rifles, daggers, and other 18th century artifacts on display.
+   
+   In my experience, Al Hazm was one of the few forts in Oman that had a free audio guide, and even though I didn’t use this I’ve heard it’s super informative and done in clear English.
+   
+   It gives some extra insight into 18th century Omani life and how the fort was used over the years.
+   
+   
+   
+   Looking through the trees at the walls of Al Hazm Castle in Oman
+   Al Hazm Castle in Oman
+   
+   When I visited Al Hazm I had already seen a bunch of other forts on the same day, so I was starting to develop some major ‘fort fatigue’, but I’m still glad I walked up to the top of the fort to look around.
+   
+   You can walk along the inside of some walls at the top, and the views are pretty nice. Bring water! The walk up to the top of the fort can be extremely hot depending on the season.
+   
+   Al Hazm Castle is located near Rustaq, so it’s easy to visit if you’re planning to go see other forts in the area. There’s a small entry fee, but most tours seem to include this in the price.<br>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1AxcTML7TFuMkZFkjltReZKWPJiNK2yHcyg&s" alt="photo" width="400" height="300"><br>
+           <input type="checkbox" id="btn">
+       <label for="btn"></label>
+       </div>
+       
+   </div>
+   <div class="flex-container5">
+       <div class="ocean">
+           <p class="original">
+               <h2>Hobbiton New Zealand: How To Visit The Shire Movie Set
+               </h2>
+               One of the most photogenic places in New Zealand is actually a movie set — Hobbiton, from the popular ‘Lord of the Rings’ series!
+   
+   Hobbiton village was filmed on green farmlands in the North Island of New Zealand, and fans will be thrilled to know that they’ve kept the entire movie set from the Shire intact for people to tour.<br>
+   What Is Hobbiton?
+   Unless you’ve been living underground (no pun), you’ve probably heard that New Zealand is where the award-winning ‘Lord of the Rings’ and ‘Hobbit’ trilogies were filmed.
+   
+   
+   In the books (and movies), the Shire is the peaceful green countryside where the protagonist hobbits live. Synonymous with peace and quiet, Hobbiton is a village paradise complete with dozens of little turf covered houses that look like something out of medieval England (with a fantasy twist).
+   
+   The Hobbiton movie set was first created for ‘Lord of the Rings’ in 1999, with road-building help from the New Zealand Army, and then the set was completely rebuilt and expanded in 2010 for the ‘Hobbit’ movies.<br>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfSJ3Rw8i9oojr3bwHDKVpQmqy8MH6Kcehxw&s" alt="photo" width="400" height="300"><br>
+           </p>
+           <p class="extra">
+   Where Is The Shire / Hobbiton?
+   The Hobbiton movie set is located just outside of Matamata, a tiny town on the North Island of New Zealand.
+   
+   From the city of Auckland, it’s a 2 hour drive through small towns and mostly rural roads.
+   Where Is The Shire / Hobbiton?
+   The Hobbiton movie set is located just outside of Matamata, a tiny town on the North Island of New Zealand.
+   
+   From the city of Auckland, it’s a 2 hour drive through small towns and mostly rural roads.<br>
+   </p>
+   <img src="https://www.hobbitontours.com/media/1177/hobbiton-movie-set-4.jpg" alt="photo" width="400" height="300"><br>
+   <input type="checkbox" id="btn">
+       <label for="btn"></label>
+       </div>
+       <div class="palau">
+           <p class="original">
+               <h2>Palau Scenic Flight Over The Rock Islands: How To Do It
+               </h2>
+               A scenic flight over the Rock Islands is becoming one of the most popular things for tourists to do in the little country of Palau, and it’s easy to see why: this is one of the most beautiful landscapes in the Pacific!
+               While it’s a great idea to visit the Rock Islands on a boat tour, the scenic flight gives you an amazing and unique perspective that is really hard to beat.
+   
+               I joined one of these flights recently on a little prop plane with Pacific Mission Aviation, and the whole thing was such a great experience.
+               
+               They take the doors off for pictures, and you get an overhead view of the town of Koror, followed by incredible views of hundreds of Palau’s nicest islands, lakes, and lagoons. It’s paradise!
+               
+               This travel blog will explain everything you need to know about the Palau scenic flights, including the booking process, prices, safety, and what to expect when you’re in the air. I’ll also share some of the pictures I took on my own flight!<br>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvVxU7GJfVr0WlSc8RG9rmm_qYS2qPoC7P1Q&s" alt="image" width="400" height="300"><br>
+   <p class="extra">
+      The Company: Pacific Mission Aviation
+   Scenic flights in Palau have been pioneered by a company called Pacific Mission Aviation (PMA). They were the first company to offer scenic flights over Palau.
+   
+   There’s another company now called Fish ‘n Fins that also offers scenic flights, but my experience is only with PMA so that’s what I’ll be sharing here.
+   
+   PMA is primarily a Christian missionary organization, and by doing a scenic flight with them you’re helping to subsidize the humanitarian and medical work they do in the islands, while also helping them offset the costs of the inter-island flights they run for Palauan locals.
+   
+   They’re doing a great work in Palau, and being able to contribute to that is a nice little bonus of going on one of their scenic flights!
+   
+   Palau Scenic Flight Rock Islands Pacific Mission Aviation PMA
+   
+   PMA takes the doors off of the plane for all of their scenic flights in Palau, which gives you great views and photo opportunities. For safety, you’ll have a seat belt and there’s also a safety bar that covers part of the open doorway.
+   
+   The main thing you need to be careful about is sticking your phone or camera out the open door. The wind can be strong, so you have to hold it really tight with both hands or you could lose it.
+   
+   If this is your first time flying in a little prop plane like this, then you may be a bit nervous lifting off the ground at first, but you forget about that pretty quick once you’re in the air.<br>
+   
+   <img src="../assets/canada/Lake Louise, Alberta.png" alt="canada" width="400" height="300"><br>
+   </p>
+   <input type="checkbox" id="btn">
+       <label for="btn"></label>
+       </div>
+       </div>
+
+    
+</body>
+</html>

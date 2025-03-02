@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        body{
+            background-color: aqua;
+            padding: 60px;
+        }
+        .signup{
+            width: 600px;
+            height: 520px;
+            margin: auto;
+            background-color: antiquewhite;
+            border-radius: 3px;
+            border: solid rgb(14 14 14);
+            align-items: center;
+            padding-left: 50px;
+            margin: auto;
+        }
+        .login{
+            width: 360px;
+            height:100pxpx;
+            margin: auto;
+            border-radius: 3px;
+            border: solid black;
+            background-color: antiquewhite;
+            padding-left: 50px;
+        }
+        form{
+            display: flex;
+    
+        }
+        form label{
+            display: flex;
+            
+           font-size: 18px;
+           padding-top: 20px;
+        }
+        form input{
+            width:200px;
+        padding:7px;
+            border: none;
+            border: 2px solid gray;
+            border-radius: 6px;
+            outline: none;
+            
+        }
+        input[type="button"]{
+            width: 100px;
+            height: 35px;
+            margin-top:300x;
+            margin-bottom: 20px;
+            margin-right: 1000px;
+    border:solid grey ;
+            background-color: rgb(168, 174, 5);
+            color: azure;
+            font-size: 18px;
+    align-items: center;
+        
+        }
+        .para a{
+            color: blue;
+        }
+        
+
+        @media (max-width: 768px) {
+    .signup, .login {
+        width: 100%;
+        padding: 15px;
+    }
+
+    form input {
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    input[type="button"] {
+        max-width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .signup, .login {
+        padding: 10px;
+    }
+
+    form input {
+        padding: 6px;
+    }
+
+    input[type="button"] {
+        font-size: 14px;
+    }
+}
+
+    </style>
+   
+</head>
+<body>
+    
+    
+    <form>
+        <div class="login">
+            <h2>Login</h2>
+            <label>Email</label>
+            <input type="email" placeholder=""> <br> <br>
+            <label>Password</label>
+            <input type="password" placeholder=""> <br> <br>
+            <input type="button" value="submit">
+
+            <p> Not have an account? <a href="./login form.html">Sign-up here</a></p>
+
+        </div>
+
+    </form>
+    
+</body>
+</html>

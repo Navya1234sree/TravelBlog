@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <style>
+     body{
+        background-color: darkcyan;
+     }
+          .signup{
+width: 600px;
+height:520px;
+margin: auto;
+background-color: antiquewhite;
+border-radius: 3px;
+border: solid rgb(14, 14, 14);
+margin: auto;
+align-items: center;
+padding-left:50px;
+        }
+      
+        form{
+            display: flex;
+    
+        }
+        form label{
+            display: flex;
+            
+           font-size: 18px;
+           padding-top: 20px;
+        }
+        form input{
+            width:200px;
+        padding:7px;
+            border: none;
+            border: 2px solid gray;
+            border-radius: 6px;
+            outline: none;
+            
+        }
+        input[type="button"]{
+            width: 100px;
+            height: 35px;
+            margin-top:300x;
+            margin-bottom: 20px;
+            margin-right: 1000px;
+    border:solid grey ;
+            background-color: rgb(168, 174, 5);
+            color: azure;
+            font-size: 18px;
+    align-items: center;
+        
+        }
+        .para a{
+            color: blue;
+        }
+
+
+        
+        @media (max-width: 768px) {
+    .signup {
+        padding: 15px;
+    }
+
+    form input[type="text"], 
+    form input[type="email"], 
+    form input[type="password"] {
+        width: 100%;
+        padding: 8px;
+    }
+
+    input[type="button"] {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .signup {
+        padding: 10px;
+    }
+
+    form input[type="text"], 
+    form input[type="email"], 
+    form input[type="password"] {
+        padding: 6px;
+    }
+
+    input[type="button"] {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    
+    
+    <form>
+        <div class="signup">
+            <h1>Sign-up</h1>
+    <label>First Name</label> 
+    <input type="text" placeholder="">
+    <label>Email</label>
+    <input type="email" placeholder="">
+    <label>Password</label>
+    <input type="password" placeholder="">
+    <label>Confirm Password</label>
+    <input type="password" placeholder="">  <br><br>
+    <input type="button" value="submit">
+<p>By clicking sign-up button,you agree to our
+    Terms and Conditions</p>
+    <p class="para">Already have an account? <a href="signup.html">Login here</a></p>
+</div>
+    </form>
+    
+</body>
+</html>

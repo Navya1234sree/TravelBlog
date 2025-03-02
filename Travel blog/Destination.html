@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+    <link rel="stylesheet" href="./styles1.css">
+    <style>
+    body{
+        display: grid;
+        background-image: url(../assets/bgimg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .heading{
+    width: 30%;
+    text-align: center;
+    color: #fff;
+}
+.heading h1{
+    font-size: 40px;
+}
+.heading a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 14px 50px;
+     background-color: #fff;
+}
+.heading a:hover{
+    letter-spacing: 3px;
+    transition: 0.6s;
+    
+}
+.tours{
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+.places{
+    display: inline;
+    text-align: center;
+    border-radius: 12px;
+    padding: 40px;
+    
+}
+.places h2{
+    color: red;
+    font-size: 35px;
+    letter-spacing: 3px;
+    border-radius: 12px;
+    padding: 10px  10px;
+    margin-bottom: 10px;
+    background-color: #1d7ca8;
+}
+.places a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 12px 30px;
+    background-color: #fff;
+}
+.places a :hover{
+    background-color: #000;
+    letter-spacing: 3px;
+    transition: 0.6s;
+}
+
+@media (max-width: 1200px) {
+    .heading {
+        width: 40%;
+    }
+
+    .tours {
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        width: 50%;
+    }
+
+    .tours {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px)  {
+    .heading {
+        width: 70%;
+    }
+
+    .tours {
+        grid-template-columns: auto auto;
+    }
+
+    .places {
+        padding: 30px;
+    }
+
+    .places h2 {
+        font-size: 28px;
+    }
+
+    .places a {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+
+}@media (max-width: 576px) {
+    .heading {
+        width: 90%;
+    }
+
+    .tours {
+        grid-template-columns: auto;
+        padding: 30px;
+    }
+
+    .places {
+        padding: 20px;
+    }
+
+    .places h2 {
+        font-size: 24px;
+    }
+
+    .places a {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <h1> Lucky Travels</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./blog.html">Blogs</a></li> 
+                <li><a href="./Destination.html">Destinations</a></li>
+                <li><a href="./img gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="signup">
+            <a href="./signup.html">Signin</a>
+        </div>
+    </div>
+   
+     
+    <div class="tours">
+        <div class="places">
+            <h2>Australia</h2>
+            <img src="../assets/australia.png"  width="300px" height="200px" style="border-radius: 12px;">
+            <br>
+            <br>
+            <a href="./ticket.html">Book now</a>
+        </div>
+        <div class="places">
+            <h2>America</h2>
+            <img src="../assets/america/america.png"  width="300px" height="200px" style="border-radius: 12px;">
+            <br>
+            <br>
+            <a href="./ticket.html">Book now</a>
+        </div>
+         <div class="places">
+            <h2>Europe</h2>
+            <img src="../assets/europa.png"   width="300px" height="200px" style="border-radius: 12px;">
+            <br>
+            <br>
+            <a href="./ticket.html">Book now</a>
+        </div>
+        <div class="places">
+            <h2>canada</h2>
+            <img src="../assets/canada/Lake Louise, Alberta.png"  width="300px" height="200px" style="border-radius: 12px;">
+            <br>
+            <br>
+            <a href="./ticket.html">Book now</a>
+        </div>
+        <div class="places">
+            <h2>Ireland</h2>
+            <img src="../assets/ireland.png"  width="300px" height="200px" style="border-radius: 12px;">
+            <br>
+            <br>
+            <a href="./ticket.html">Book now </a>
+        </div>
+        <div class="places">
+            <h2>Russia</h2>
+            <img src="../assets/ruskella mount russia.png"  width="300px" height="200px" style="border-radius: 12px;">
+            <br>
+            <br>
+            <a href="./ticket.html">Book now </a>
+        </div>
+    </div>
+    
+</body>
+</html>
